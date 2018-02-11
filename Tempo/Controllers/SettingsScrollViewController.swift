@@ -1,6 +1,6 @@
 //
 //  SettingsScrollViewController.swift
-//  Tempo
+//  Warble
 //
 //  Created by Keivan Shahida on 4/15/17.
 //  Copyright © 2017 CUAppDev. All rights reserved.
@@ -19,7 +19,7 @@ class SettingsScrollViewController: UIViewController, UIScrollViewDelegate {
 	let buttonHeight: CGFloat = 50
 	var playerCenter = PlayerCenter.sharedInstance
 	
-	let spotifyDescription = "Log in to allow Tempo to add songs your find to your Spotify."
+	let spotifyDescription = "Log in to share songs through Warble."
 	
 	var nameLabel: UILabel!
 	var usernameLabel: UILabel!

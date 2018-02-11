@@ -1,6 +1,6 @@
 //
 //  NotificationBannerProtocol.swift
-//  Tempo
+//  Warble
 //
 //  Created by Logan Allen on 01/17/16.
 //  Copyright © 2016 CUAppDev. All rights reserved.
@@ -97,7 +97,7 @@ class Banner {
 		Banner.showBanner(
 			currentVC,
 			delay: 0,
-			data: TempoNotification(msg: "Tempo must be down, sorry :("),
+			data: TempoNotification(msg: "Warble must be down, sorry :("),
 			backgroundColor: UIColor.tempoDarkGray,
 			textColor: UIColor.white)
 	}

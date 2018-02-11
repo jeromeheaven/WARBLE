@@ -40,7 +40,7 @@ class TempoNotification: NSObject {
 		super.init()
 	}
 	
-	// Initialization for tempo activity notification
+	// Initialization for Warble activity notification
 	convenience init(json: JSON) {
 		let id = json["id"].stringValue
 		let message = json["message"].stringValue

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Warble</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -42,7 +44,7 @@
 	<key>FacebookAppID</key>
 	<string>977907382286912</string>
 	<key>FacebookDisplayName</key>
-	<string>Tempo</string>
+	<string>Warble</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>tempologin</string>

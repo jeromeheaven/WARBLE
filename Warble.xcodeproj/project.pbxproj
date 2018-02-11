@@ -115,7 +115,7 @@
 		1D1CC60C1C31BC0D0052F66D /* NSURLSession+Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Shared.swift"; sourceTree = "<group>"; };
 		1D1DD7121AE492750066AB39 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		1D653F3D1B81451700F54455 /* SpotifyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyController.swift; sourceTree = "<group>"; };
-		1D72D9B51AACC4C0007822B0 /* Tempo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D72D9B51AACC4C0007822B0 /* Warble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D72D9B91AACC4C0007822B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D72D9BA1AACC4C0007822B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D72D9C11AACC4C0007822B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		1D72D9B61AACC4C0007822B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D72D9B51AACC4C0007822B0 /* Tempo.app */,
+				1D72D9B51AACC4C0007822B0 /* Warble.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -448,9 +448,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D72D9B41AACC4C0007822B0 /* Tempo */ = {
+		1D72D9B41AACC4C0007822B0 /* Warble */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D72D9D41AACC4C0007822B0 /* Build configuration list for PBXNativeTarget "Tempo" */;
+			buildConfigurationList = 1D72D9D41AACC4C0007822B0 /* Build configuration list for PBXNativeTarget "Warble" */;
 			buildPhases = (
 				1648FA63E111E223B921C166 /* [CP] Check Pods Manifest.lock */,
 				1D72D9B11AACC4C0007822B0 /* Sources */,
@@ -464,9 +464,9 @@
 			);
 			dependencies = (
 			);
-			name = Tempo;
+			name = Warble;
 			productName = IceFishing;
-			productReference = 1D72D9B51AACC4C0007822B0 /* Tempo.app */;
+			productReference = 1D72D9B51AACC4C0007822B0 /* Warble.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -482,7 +482,7 @@
 				TargetAttributes = {
 					1D72D9B41AACC4C0007822B0 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = ZGMCXU7X3U;
+						DevelopmentTeam = PLKS4XLXAD;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -496,7 +496,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1D72D9B01AACC4C0007822B0 /* Build configuration list for PBXProject "Tempo" */;
+			buildConfigurationList = 1D72D9B01AACC4C0007822B0 /* Build configuration list for PBXProject "Warble" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -509,7 +509,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D72D9B41AACC4C0007822B0 /* Tempo */,
+				1D72D9B41AACC4C0007822B0 /* Warble */,
 			);
 		};
 /* End PBXProject section */
@@ -542,13 +542,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tempo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78630E2F06DFC643EE8D7CCC /* [CP] Copy Pods Resources */ = {
@@ -572,9 +575,30 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tempo/Pods-Tempo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/HanekeSwift/Haneke.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Tweaks/Tweaks.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haneke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tweaks.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -754,7 +778,7 @@
 				CODE_SIGN_ENTITLEMENTS = Tempo/Tempo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Walker White (ZGMCXU7X3U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZGMCXU7X3U;
+				DEVELOPMENT_TEAM = PLKS4XLXAD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -786,8 +810,8 @@
 					"\"Tweaks\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cuappdev.Tempo;
-				PRODUCT_NAME = Tempo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warblestage.Warble;
+				PRODUCT_NAME = Warble;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tempo/Tempo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -806,7 +830,7 @@
 				CODE_SIGN_ENTITLEMENTS = Tempo/Tempo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Walker White (ZGMCXU7X3U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = ZGMCXU7X3U;
+				DEVELOPMENT_TEAM = PLKS4XLXAD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,8 +862,8 @@
 					"\"Tweaks\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cuappdev.Tempo;
-				PRODUCT_NAME = Tempo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warblestage.Warble;
+				PRODUCT_NAME = Warble;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tempo/Tempo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -851,7 +875,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D72D9B01AACC4C0007822B0 /* Build configuration list for PBXProject "Tempo" */ = {
+		1D72D9B01AACC4C0007822B0 /* Build configuration list for PBXProject "Warble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D72D9D21AACC4C0007822B0 /* Debug */,
@@ -860,7 +884,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D72D9D41AACC4C0007822B0 /* Build configuration list for PBXNativeTarget "Tempo" */ = {
+		1D72D9D41AACC4C0007822B0 /* Build configuration list for PBXNativeTarget "Warble" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D72D9D51AACC4C0007822B0 /* Debug */,

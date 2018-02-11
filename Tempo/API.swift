@@ -1,6 +1,6 @@
 //
 //  API.swift
-//  Tempo
+//  Warble
 //
 //  Created by Lucas Derraugh on 4/22/15.
 //  Copyright (c) 2015 Lucas Derraugh. All rights reserved.
@@ -179,7 +179,8 @@ class API {
 		token = token.replacingOccurrences(of: ">", with: "") as NSString
 		token = token.replacingOccurrences(of: " ", with: "") as NSString
 		
-		let params = ["app": "TEMPO", "push_id":"\(token)", "user_id": User.currentUser.id]
+		let params = ["app": "Warble", "push_id":"\(token)", "user_id": User.currentUser.id]
+		//changed to warble from "Tempo"
 		
 		let map: ([String: AnyObject]) -> Bool? = {
 			guard let success = $0["success"] as? String, success == "User successfully registered." else { return false }

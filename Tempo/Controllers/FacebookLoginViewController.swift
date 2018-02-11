@@ -42,11 +42,12 @@ class FacebookLoginViewController: UIViewController {
 		// Logo Image
 		logoImageView = UIImageView(frame: CGRect(x: 0, y: view.frame.height * 0.19, width: view.frame.width * 0.427, height: view.frame.width * 0.427))
 		logoImageView.center.x = view.center.x
+		//Deal with line below that crashes on logOut
 		logoImageView.image = #imageLiteral(resourceName: "TempoLogo")
 		
 		// Tempo Label
 		tempoLabel = UILabel(frame: CGRect(x: 0, y: view.frame.height * 0.51, width: view.frame.width, height: view.frame.height))
-		tempoLabel.text = "Tempo"
+		tempoLabel.text = "Warble"
 		tempoLabel.textAlignment = .center
 		tempoLabel.textColor = .white
 		tempoLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 60.0)
